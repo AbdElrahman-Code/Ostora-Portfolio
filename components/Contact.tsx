@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Section from "./Section";
-import { Mail, Linkedin, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Linkedin, Loader2, CheckCircle2, AlertCircle, Phone, MessageCircle } from "lucide-react";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -48,6 +48,40 @@ export default function Contact() {
     >
       <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10">
         <div className="space-y-5">
+          {/* WhatsApp */}
+<a
+  href="https://wa.me/201098769888" // Replace with your WhatsApp number
+  target="_blank"
+  rel="noopener noreferrer"
+  className="card-border p-5 flex items-center gap-4 hover:border-signal-cyan/50 transition-colors"
+>
+  <div className="h-11 w-11 rounded-xl bg-green-500/10 grid place-items-center text-green-500 shrink-0">
+    <MessageCircle size={18} />
+  </div>
+  <div className="min-w-0">
+    <p className="text-xs text-muted">WhatsApp</p>
+    <p className="text-sm font-medium truncate">
+      +20 100 123 4567
+    </p>
+  </div>
+</a>
+
+{/* Call */}
+<a
+  href="tel:+201098769888" // Replace with your phone number
+  className="card-border p-5 flex items-center gap-4 hover:border-signal-cyan/50 transition-colors"
+>
+  <div className="h-11 w-11 rounded-xl bg-emerald-500/10 grid place-items-center text-emerald-500 shrink-0">
+    <Phone size={18} />
+  </div>
+  <div className="min-w-0">
+    <p className="text-xs text-muted">Call</p>
+    <p className="text-sm font-medium truncate">
+      +20 100 123 4567
+    </p>
+  </div>
+</a>
+          
           <a
             href="mailto:abdelrahman1703485@miuegypt.edu.eg"
             className="card-border p-5 flex items-center gap-4 hover:border-signal-cyan/50 transition-colors"
@@ -79,6 +113,9 @@ export default function Contact() {
               </p>
             </div>
           </a>
+
+
+          
         </div>
 
         <form onSubmit={onSubmit} className="card-border p-6 sm:p-8 space-y-5">
