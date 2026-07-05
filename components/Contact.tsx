@@ -61,7 +61,7 @@ export default function Contact() {
   <div className="min-w-0">
     <p className="text-xs text-muted">WhatsApp</p>
     <p className="text-sm font-medium truncate">
-      +20 100 123 4567
+      +20 109 876 9888
     </p>
   </div>
 </a>
@@ -77,7 +77,7 @@ export default function Contact() {
   <div className="min-w-0">
     <p className="text-xs text-muted">Call</p>
     <p className="text-sm font-medium truncate">
-      +20 100 123 4567
+      +20 109 876 9888
     </p>
   </div>
 </a>
